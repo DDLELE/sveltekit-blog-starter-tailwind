@@ -11,9 +11,9 @@
 		if(!currentPath) return ""
 		if(currentPath.includes(element))
 		{
-			return  'font-bold text-gray-900 no-underline dark:text-gray-100'
+			return  'font-bold text-gray-800 no-underline dark:text-gray-100'
 		} 
-		else return 'text-gray-600 hover:text-gray-900 hover:text-underline dark:text-gray-400 hover:dark:text-gray-100'
+		else return 'text-gray-600 hover:text-gray-800 hover:text-underline dark:text-gray-400 hover:dark:text-gray-100'
 	}
 
 	let headerClassesTop = "bg-gray-100 dark:bg-slate-800"
@@ -62,7 +62,7 @@
 	
 </script>
 
-<header id="header" class="fixed w-full z-10 top-0 dark:text-white shadow-2xl {currentClasses}">
+<header id="header" class="fixed w-full z-10 top-0 dark:text-white shadow-lg {currentClasses}">
 	<div
 		id="progress"
 		class="h-[0.27rem] z-20 top-0"
@@ -72,7 +72,7 @@
 	<div class="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3">
 		<div class="pl-4">
 			<a href="/" class="hover:no-underline">
-				<h1 class="my-0 text-gray-900 dark:text-white text-xl no-underline hover:no-underline font-extrabold" href="/">
+				<h1 class="my-0 text-gray-800 dark:text-white text-xl no-underline hover:no-underline font-extrabold" href="/">
 					{siteTitle}
 				</h1></a>
 		</div>
@@ -80,7 +80,7 @@
 		<div class="block lg:hidden pr-4">
 			<button
 				id="nav-toggle"
-				class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-900 hover:border-green-500 appearance-none focus:outline-none"
+				class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-800 hover:border-green-500 appearance-none focus:outline-none"
 			 on:click={()=>{toggleMenu()}}>
 				<svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
 					<title>Menu</title>

@@ -5,23 +5,47 @@
 
 <ul class="posts-list">
 	{#each posts as post}
-		<li>
-			<article>
-				<a href="/post/{post.slug}">
-					<img
-					src={post.coverImage}
-					alt=""
-					width={post.coverWidth}
-					height={post.coverHeight}
-					style="ratio: {post.coverWidth} / {post.coverHeight}"
-					/>
-					<h2>
-						{post.title}
-					</h2>
-				</a>
-			</article>
+	<a href="/post/{post.slug}" class="hover:no-underline">
+	<article class="h-full w-full bg-gray-0 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-0  shadow-lg hover:shadow-2xl my-10 cursor-pointer">
+		<div class="container mx-auto">
+			<div class="lg:-mx-6 lg:flex lg:items-center">
+				<img class="object-cover w-full lg:mx-6 lg:w-1/2 rounded h-72 lg:h-96" src={post.coverImage}
+				alt=""
+				>
 
-			<p>{post.excerpt}</p>
-		</li>
+				<div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 pb-6 px-6">
+					<tags class="text-sm text-blue-500 uppercase flex flex-row">
+						{#each post.categories as category}
+						<a class="text-blue-500" href="/post/category/{category}/">
+							<tag class="mr-3">
+							{category}
+							</tag>
+						</a>
+						{/each}
+					</tags>
+
+					<a href="/post/{post.slug}" class="block mt-4 text-2xl font-semibold text-gray-800 hover:underline dark:text-white md:text-3xl">
+						{post.title}
+					</a>
+
+					<p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+						{post.excerpt}
+					</p>
+
+					<a href="/post/{post.slug}" class="inline-block mt-2 text-blue-500 underline hover:text-blue-400">Read more</a>
+
+					<div class="flex items-center mt-6">
+						<img class="object-cover object-center w-10 h-10 rounded-full" src="{post.authorImageUrl}" alt="">
+
+						<div class="mx-4">
+							<h4 class="text-sm text-gray-700 dark:text-gray-200">{post.author}</h4>
+							<p class="text-sm text-gray-500 dark:text-gray-400">{post.authorCurrentRole}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</article>
+</a>
 	{/each}
 </ul>

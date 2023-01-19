@@ -6,9 +6,13 @@ categories:
   - "sveltekit"
   - "markdown"
 coverImage: "/images/jefferson-santos-fCEJGBzAkrU-unsplash.jpg"
+coverImageAlt: Mountains
 coverWidth: 800
 coverHeight: 450
 excerpt: Check out how heading links work with this starter in this post.
+author: Daniel Railean
+authorCurrentRole: Engineer
+authorImageUrl: https://ddlele.com/pic/pas.png
 ---
 
 Here are some headings:

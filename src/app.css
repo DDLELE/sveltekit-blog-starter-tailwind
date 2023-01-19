@@ -35,6 +35,7 @@
 
 * {
     font-family: 'JetBrains Mono', monospace;   
+    word-break: break-word;
 }
 
 a {
@@ -43,6 +44,7 @@ a {
 a:hover {
     @apply underline;
 }
+
 
 /* http://prismjs.com/download.html?themes=prism-coy&languages=markup+css+clike+javascript+typescript&plugins=line-highlight+line-numbers+toolbar+normalize-whitespace+show-language+copy-to-clipboard */
 /**
@@ -71,13 +73,21 @@ a:hover {
      -moz-hyphens: none;
      -ms-hyphens: none;
      hyphens: none;
-     @apply dark:bg-slate-800 text-white;
+     @apply dark:bg-slate-800 dark:text-white text-black bg-white text-base;
+ }
+ pre[class*="language-"]
+ {
+    @apply shadow-lg rounded-2xl my-5 
+ }
+code[class*="language-"]
+ {
+    @apply p-7 rounded-xl border dark:border-stone-800
  }
  
  /* Code blocks */
  pre[class*="language-"] {
      position: relative;
-     margin: .5em 0;
+     /* margin: .5em 0; */
      /* box-shadow: -1px 0px 0px 0px #358ccb, 0px 0px 0px 1px #dfdfdf; */
      /* border-left: 10px solid #358ccb; */
      background-color: #fdfdfd;
@@ -85,13 +95,13 @@ a:hover {
      background-size: 3em 3em;
      background-origin: content-box;
      overflow: visible;
-     padding: 0;
+     /* padding: 0; */
  }
  
  code[class*="language"] {
      max-height: inherit;
      height: 100%;
-     padding: 0 1em;
+     /* padding: 0 1em; */
      display: block;
      overflow: auto;
  }
@@ -103,13 +113,13 @@ a:hover {
      -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
      box-sizing: border-box;
-     margin-bottom: 1em;
+     /* margin-bottom: 1em; */
  }
  
  /* Inline code */
  :not(pre) > code[class*="language-"] {
      position: relative;
-     padding: .2em;
+     /* padding: .2em; */
      border-radius: 0.3em;
      color: #c92c2c;
      border: 1px solid rgba(0, 0, 0, 0.1);
@@ -243,11 +253,11 @@ a:hover {
  
  /* Plugin styles: Line Numbers */
  pre[class*="language-"].line-numbers {
-     padding-left: 0;
+     /* padding-left: 0; */
  }
  
  pre[class*="language-"].line-numbers code {
-     padding-left: 3.8em;
+     /* padding-left: 3.8em; */
  }
  
  pre[class*="language-"].line-numbers .line-numbers-rows {
@@ -256,29 +266,30 @@ a:hover {
  
  /* Plugin styles: Line Highlight */
  pre[class*="language-"][data-line] {
-     padding-top: 0;
+     /* padding-top: 0;
      padding-bottom: 0;
-     padding-left: 0;
+     padding-left: 0; */
  }
  pre[data-line] code {
      position: relative;
-     padding-left: 4em;
+     /* padding-left: 4em; */
  }
  pre .line-highlight {
-     margin-top: 0;
+     /* margin-top: 0; */
  }
  
  pre[data-line] {
      position: relative;
-     padding: 1em 0 1em 3em;
+     /* padding: 1em 0 1em 3em; */
  }
  
  .line-highlight {
      position: absolute;
      left: 0;
      right: 0;
-     padding: inherit 0;
-     margin-top: 1em; /* Same as .prism’s padding-top */
+     /* padding: inherit 0; */
+     /* Same as .prism’s padding-top */
+     /* margin-top: 1em;  */
  
      background: hsla(24, 20%, 50%,.08);
      background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
@@ -296,7 +307,7 @@ a:hover {
          top: .4em;
          left: .6em;
          min-width: 1em;
-         padding: 0 .5em;
+         /* padding: 0 .5em; */
          background-color: hsla(24, 20%, 50%,.4);
          color: hsl(24, 20%, 95%);
          font: bold 65%/1.5 sans-serif;
@@ -315,7 +326,7 @@ a:hover {
  
  pre.line-numbers {
      position: relative;
-     padding-left: 3.8em;
+     /* padding-left: 3.8em; */
      counter-reset: linenumber;
  }
  
@@ -350,7 +361,7 @@ a:hover {
              content: counter(linenumber);
              color: #999;
              display: block;
-             padding-right: 0.8em;
+             /* padding-right: 0.8em; */
              text-align: right;
          }
  pre.code-toolbar {
@@ -384,7 +395,7 @@ a:hover {
      font: inherit;
      line-height: normal;
      overflow: visible;
-     padding: 0;
+     /* padding: 0; */
      -webkit-user-select: none; /* for button */
      -moz-user-select: none;
      -ms-user-select: none;
@@ -395,7 +406,7 @@ a:hover {
  pre.code-toolbar > .toolbar span {
      color: #bbb;
      font-size: .8em;
-     padding: 0 .5em;
+     /* padding: 0 .5em; */
      background: #f5f2f0;
      background: rgba(224, 224, 224, 0.2);
      box-shadow: 0 2px 0 0 rgba(0,0,0,0.2);

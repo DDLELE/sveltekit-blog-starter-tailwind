@@ -29,10 +29,14 @@ const fetchPosts = async ({ offset = 0, limit = postsPerPage, category = '' } = 
 		slug: post.slug,
 		excerpt: post.excerpt,
 		coverImage: post.coverImage,
+		coverImageAlt: post.coverImageAlt,
 		coverWidth: post.coverWidth, 
 		coverHeight: post.coverHeight,
 		date: post.date,
 		categories: post.categories,
+		author: post.author,
+		authorCurrentRole: post.authorCurrentRole,
+		authorImageUrl: post.authorImageUrl
 	}))
 
 	return {

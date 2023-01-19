@@ -2,15 +2,9 @@
 <script>
 	export let data;
 
-	const { title, excerpt, date, updated, coverImage, coverWidth, coverHeight, categories } =
+	const { title, excerpt, date, updated, coverImage, coverWidth, coverHeight, categories, coverImageAlt } =
 		data.meta;
 </script>
-
-<style lang="postcss">
-	@tailwind base;
-	@tailwind components;
-
-</style>
 
 
 <svelte:head>
@@ -29,7 +23,7 @@
 </svelte:head>
 
 <article
-	class="w-full px-4 py-6 md:px-6 text-xl text-gray-800 leading-normal overflow-auto"
+	class="w-full pt-4 text-xl text-gray-800 leading-normal overflow-auto"
 >
 	<!--Title-->
 	<div class="font-sans">
@@ -37,10 +31,10 @@
 			&lt; <a
 				href="/post"
 				class="text-base md:text-sm text-green-500 font-bold no-underline hover:underline"
-				>BACK TO BLOG</a
+				>ALL POSTS</a
 			>
 		</p>
-		<h1 class="font-sans break-normal text-gray-900 dark:text-gray-100">
+		<h1 class="font-sans break-normal text-gray-800 dark:text-gray-100">
 			{title}
 		</h1>
 		<p class="text-sm md:text-base font-normal text-gray-600 dark:text-gray-100">Published: {date}</p>
@@ -49,9 +43,9 @@
 
 	<!-- You might want to add an alt frontmatter attribute. If not, leaving alt blank here works, too. -->
 	<img
-		class="my-7 rounded-sm"
+		class="my-7 rounded p-0 mx-0 w-full"
 		src={coverImage}
-		alt=""
+		alt="{coverImageAlt}"
 		style="aspect-ratio: {coverWidth} / {coverHeight};"
 		width={coverWidth}
 		height={coverHeight}
@@ -63,10 +57,10 @@
 
 	{#if categories}
 	<div class="text-xl md:text-md text-gray-500 py-6">
-		<div class="flex flex-row">
 		Tags:
+		<div class="flex flex-row flex-wrap">
 		{#each categories as category}
-			<a class="text-xl md:text-md dark:bg-teal-900 bg-teal-100 border-teal-300 dark:border-teal-800 border-2 px-2 mx-2" href="/post/category/{category}/">
+			<a class="text-xl md:text-md dark:bg-teal-900 bg-teal-100 border-teal-300 dark:border-teal-800 border-2 px-2 mr-1 mt-1" href="/post/category/{category}/">
 				{category}
 			</a>
 			{/each}
