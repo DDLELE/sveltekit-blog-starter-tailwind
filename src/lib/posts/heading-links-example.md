@@ -6,8 +6,8 @@ categories:
   - "sveltekit"
   - "markdown"
 coverImage: "/images/jefferson-santos-fCEJGBzAkrU-unsplash.jpg"
-coverWidth: 16
-coverHeight: 9
+coverWidth: 800
+coverHeight: 450
 excerpt: Check out how heading links work with this starter in this post.
 ---
 

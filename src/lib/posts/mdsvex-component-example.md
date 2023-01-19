@@ -7,8 +7,8 @@ categories:
   - "markdown"
   - "svelte"
 coverImage: "/images/jerry-zhang-ePpaQC2c1xA-unsplash.jpg"
-coverWidth: 1600
-coverHeight: 900
+coverWidth: 800
+coverHeight: 450
 excerpt: This post demonstrates how to include a Svelte component in a Markdown post.
 ---
 

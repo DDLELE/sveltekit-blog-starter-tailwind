@@ -4,13 +4,13 @@
       @apply text-4xl font-extrabold dark:text-white my-8;
     }
     h2 {
-      @apply text-2xl font-bold dark:text-white my-6;
+      @apply text-3xl font-extrabold dark:text-white my-6;
     }
     h3 {
-      @apply text-xl font-bold dark:text-white my-4;
+      @apply text-2xl font-bold dark:text-white my-4;
     }
     h3 {
-      @apply text-lg font-bold dark:text-white my-2;
+      @apply text-xl font-bold dark:text-white my-2;
     }
     a {
       @apply text-blue-600 underline;
@@ -38,7 +38,7 @@
 }
 
 a {
-    @apply text-green-500 no-underline;
+    @apply dark:text-green-500 text-emerald-600 no-underline;
 }
 a:hover {
     @apply underline;

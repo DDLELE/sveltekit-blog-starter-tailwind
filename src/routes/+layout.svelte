@@ -26,54 +26,6 @@
 	onMount(() => {
 		const navRoutes = navItems.map((item) => item.route);
 		preloadCode(...navRoutes);
-
-		/* Progress bar */
-		//Source: https://alligator.io/js/progress-bar-javascript-css-variables/
-		var h = document.documentElement,
-			b = document.body,
-			st = 'scrollTop',
-			sh = 'scrollHeight',
-			progress = document.querySelector('#progress'),
-			scroll;
-		var scrollpos = window.scrollY;
-		var header = document.getElementById('header');
-		var navcontent = document.getElementById('nav-content');
-	
-		const reactToScroll = function () {
-			/*Refresh scroll % width*/
-			scroll = ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) * 100;
-			progress.style.setProperty('--scroll', scroll + '%');
-
-			/*Apply classes for slide in bar*/
-			scrollpos = window.scrollY;
-
-			if (scrollpos > 10) {
-				header.classList.add('bg-white');
-				header.classList.add('dark:bg-gray-900');
-				header.classList.remove('dark:bg-gray-800');
-				header.classList.add('shadow');
-				navcontent.classList.add('bg-white');
-				navcontent.classList.add('dark:bg-gray-900');
-				navcontent.classList.remove('bg-green-100');
-			} else {
-				header.classList.remove('bg-white');
-				header.classList.add('dark:bg-gray-800');
-				header.classList.remove('dark:bg-gray-900');
-				header.classList.remove('shadow');
-				navcontent.classList.remove('bg-white');
-				navcontent.classList.remove('dark:bg-gray-900');
-				navcontent.classList.add('bg-green-100');
-			}
-		}
-		reactToScroll()
-
-		document.addEventListener('scroll', 
-			reactToScroll);
-
-		//Javascript to toggle the menu
-		document.getElementById('nav-toggle').onclick = function () {
-			document.getElementById('nav-content').classList.toggle('hidden');
-		};
 	});
 
 </script>
@@ -85,7 +37,7 @@
 <div>
 	<div class="min-h-[100vh] bg-gray-100 dark:bg-gray-800 pb-10">
 		<Header />
-	<div class="container w-full md:max-w-[45rem] mx-auto pt-20">
+	<div class="container w-full md:max-w-3xl mx-auto pt-20 pb-16 px-8">
 		{#key data.path}
 			<main id="main" tabindex="-1" in:fade={transitionIn} out:fade={transitionOut}>
 				<slot />

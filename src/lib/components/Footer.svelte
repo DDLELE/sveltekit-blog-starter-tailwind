@@ -1,5 +1,4 @@
 <script>
-	import MainNav from './MainNav.svelte'
 	import { siteAuthor, siteTitle } from '$lib/config'
 </script>
 

@@ -29,7 +29,7 @@
 </svelte:head>
 
 <article
-	class="w-full px-4 md:px-6 text-xl text-gray-800 leading-normal overflow-auto"
+	class="w-full px-4 py-6 md:px-6 text-xl text-gray-800 leading-normal overflow-auto"
 >
 	<!--Title-->
 	<div class="font-sans">
@@ -40,7 +40,7 @@
 				>BACK TO BLOG</a
 			>
 		</p>
-		<h1 class="font-bold font-sans break-normal text-gray-900 dark:text-gray-100 pt-6 pb-2 text-3xl md:text-4xl">
+		<h1 class="font-sans break-normal text-gray-900 dark:text-gray-100">
 			{title}
 		</h1>
 		<p class="text-sm md:text-base font-normal text-gray-600 dark:text-gray-100">Published: {date}</p>
@@ -49,7 +49,7 @@
 
 	<!-- You might want to add an alt frontmatter attribute. If not, leaving alt blank here works, too. -->
 	<img
-		class="my-7"
+		class="my-7 rounded-sm"
 		src={coverImage}
 		alt=""
 		style="aspect-ratio: {coverWidth} / {coverHeight};"
@@ -63,12 +63,14 @@
 
 	{#if categories}
 	<div class="text-xl md:text-md text-gray-500 py-6">
+		<div class="flex flex-row">
 		Tags:
 		{#each categories as category}
-		<a class="text-xl md:text-md" href="/post/category/{category}/">
-			{category}
-		</a>
-		{/each}
+			<a class="text-xl md:text-md dark:bg-teal-900 bg-teal-100 border-teal-300 dark:border-teal-800 border-2 px-2 mx-2" href="/post/category/{category}/">
+				{category}
+			</a>
+			{/each}
+		</div>
 	</div>
 	{/if}
 </article>
