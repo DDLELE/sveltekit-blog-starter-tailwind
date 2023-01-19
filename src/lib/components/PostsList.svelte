@@ -24,7 +24,7 @@
 						{/each}
 					</tags>
 
-					<a href="/post/{post.slug}" class="block mt-4 text-2xl font-semibold text-gray-800 hover:underline dark:text-white md:text-3xl">
+					<a href="/post/{post.slug}" class="block mt-4 text-2xl font-semibold text-gray-800 hover:underline dark:text-gray-100 md:text-3xl">
 						{post.title}
 					</a>
 

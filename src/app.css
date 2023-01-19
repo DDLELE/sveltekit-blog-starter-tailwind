@@ -1,23 +1,23 @@
 @tailwind base;
 @layer base {
     h1 {
-      @apply text-4xl font-extrabold dark:text-white my-8;
+      @apply text-4xl font-extrabold dark:text-gray-100 my-8;
     }
     h2 {
-      @apply text-3xl font-extrabold dark:text-white my-6;
+      @apply text-3xl font-extrabold dark:text-gray-100 my-6;
     }
     h3 {
-      @apply text-2xl font-bold dark:text-white my-4;
+      @apply text-2xl font-bold dark:text-gray-100 my-4;
     }
     h3 {
-      @apply text-xl font-bold dark:text-white my-2;
+      @apply text-xl font-bold dark:text-gray-100 my-2;
     }
     a {
       @apply text-blue-600 underline;
     }
 
     p, li {
-        @apply text-base dark:text-white;
+        @apply text-base dark:text-gray-100;
     }
   }
 @tailwind components;
@@ -73,7 +73,7 @@ a:hover {
      -moz-hyphens: none;
      -ms-hyphens: none;
      hyphens: none;
-     @apply dark:bg-slate-800 dark:text-white text-black bg-white text-base;
+     @apply dark:bg-slate-800 dark:text-gray-100 text-black bg-white text-base;
  }
  pre[class*="language-"]
  {

@@ -62,7 +62,7 @@
 	
 </script>
 
-<header id="header" class="fixed w-full z-10 top-0 dark:text-white shadow-lg {currentClasses}">
+<header id="header" class="fixed w-full z-10 top-0 dark:text-gray-100 shadow-lg {currentClasses}">
 	<div
 		id="progress"
 		class="h-[0.27rem] z-20 top-0"
@@ -72,7 +72,7 @@
 	<div class="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3">
 		<div class="pl-4">
 			<a href="/" class="hover:no-underline">
-				<h1 class="my-0 text-gray-800 dark:text-white text-xl no-underline hover:no-underline font-extrabold" href="/">
+				<h1 class="my-0 text-gray-800 dark:text-gray-100 text-xl no-underline hover:no-underline font-extrabold" href="/">
 					{siteTitle}
 				</h1></a>
 		</div>
