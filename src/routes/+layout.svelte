@@ -85,7 +85,7 @@
 <div>
 	<div class="min-h-[100vh] bg-gray-100 dark:bg-gray-800 pb-10">
 		<Header />
-	<div class="container w-full md:max-w-4xl mx-auto pt-20">
+	<div class="container w-full md:max-w-[45rem] mx-auto pt-20">
 		{#key data.path}
 			<main id="main" tabindex="-1" in:fade={transitionIn} out:fade={transitionOut}>
 				<slot />
