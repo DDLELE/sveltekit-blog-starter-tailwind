@@ -38,7 +38,7 @@
 						<img class="object-cover object-center w-10 h-10 rounded-full" src="{post.authorImageUrl}" alt="">
 
 						<div class="mx-4">
-							<h4 class="text-sm text-gray-700 dark:text-gray-200">{post.author}</h4>
+							<h6 class="text-sm text-gray-700 dark:text-gray-200">{post.author}</h6>
 							<p class="text-sm text-gray-500 dark:text-gray-400">{post.authorCurrentRole}</p>
 						</div>
 					</div>
