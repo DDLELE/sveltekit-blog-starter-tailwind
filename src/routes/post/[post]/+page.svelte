@@ -43,6 +43,7 @@
 
 	<!-- You might want to add an alt frontmatter attribute. If not, leaving alt blank here works, too. -->
 	<img
+		loading="lazy" decoding="async"
 		class="my-7 rounded p-0 mx-0 w-full"
 		src={coverImage}
 		alt="{coverImageAlt}"
@@ -50,7 +51,7 @@
 		width={coverWidth}
 		height={coverHeight}
 	/>
-
+	]
 	<!--Post Content-->
 
 	{@html data.PostContent}

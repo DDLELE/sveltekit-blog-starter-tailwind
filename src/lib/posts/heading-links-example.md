@@ -10,7 +10,7 @@ coverImageAlt: Mountains
 coverWidth: 800
 coverHeight: 450
 excerpt: Check out how heading links work with this starter in this post.
-author: Daniel Railean
+author: Andrei. Bostan
 authorCurrentRole: Engineer
 authorImageUrl: https://ddlele.com/pic/pas.png
 ---
@@ -37,3 +37,16 @@ Lorem ipsum dolor sit amet
 
 Lorem ipsum dolor sit amet
 
+### some lua example
+
+```lua
+local function test(test) do
+  print(test)
+end
+```
+
+## A bash example
+
+```sh
+echo "some base64 stuff" | base64 -d
+```

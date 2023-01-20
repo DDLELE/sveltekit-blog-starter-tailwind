@@ -9,7 +9,7 @@
 	<article class="h-full w-full bg-gray-0 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-0  shadow-lg hover:shadow-2xl my-10 cursor-pointer">
 		<div class="container mx-auto">
 			<div class="lg:-mx-6 lg:flex lg:items-center">
-				<img class="object-cover w-full lg:mx-6 lg:w-1/2 rounded h-72 lg:h-96" src={post.coverImage}
+				<img loading="lazy" decoding="async" class="object-cover w-full lg:mx-6 lg:w-1/2 rounded h-72 lg:h-96" src={post.coverImage}
 				alt=""
 				>
 
@@ -35,7 +35,7 @@
 					<a href="/post/{post.slug}" class="inline-block mt-2 text-blue-500 underline hover:text-blue-400">Read more</a>
 
 					<div class="flex items-center mt-6">
-						<img class="object-cover object-center w-10 h-10 rounded-full" src="{post.authorImageUrl}" alt="">
+						<img loading="lazy" decoding="async" class="object-cover object-center w-10 h-10 rounded-full" src="{post.authorImageUrl}" alt="">
 
 						<div class="mx-4">
 							<h6 class="text-sm text-gray-700 dark:text-gray-200">{post.author}</h6>
