@@ -7,7 +7,7 @@
     <div class="md:flex md:justify-between">
         <div class="mb-6 md:mb-0">
             <a href="https://example.com/" class="flex items-center">
-                <img loading="lazy" decoding="async" src="https://ddlele.com/pic/dd.png" class="h-8 mr-3" alt="" />
+                <img loading="lazy" decoding="async" src="https://ddlele.com/pic/dd.png" class="h-8 mr-3 w-8" alt="" />
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-gray-100">{siteTitle}</span>
             </a>
         </div>
