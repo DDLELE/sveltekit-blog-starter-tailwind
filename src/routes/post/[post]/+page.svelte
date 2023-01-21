@@ -1,5 +1,8 @@
 <!-- This file renders each individual blog post for reading. Be sure to update the svelte:head below -->
 <script>
+	import Img from "$lib/components/Img.svelte";
+
+
 	export let data;
 
 	const { title, excerpt, date, updated, coverImage, coverWidth, coverHeight, categories, coverImageAlt } =
@@ -42,16 +45,17 @@
 	</div>
 
 	<!-- You might want to add an alt frontmatter attribute. If not, leaving alt blank here works, too. -->
-	<img
+	  
+	<Img
 		loading="lazy" decoding="async"
-		class="my-7 rounded p-0 mx-0 w-full"
+		classes="rounded p-0 mx-0 w-full"
 		src={coverImage}
 		alt="{coverImageAlt}"
 		style="aspect-ratio: {coverWidth} / {coverHeight};"
 		width={coverWidth}
 		height={coverHeight}
 	/>
-	]
+	
 	<!--Post Content-->
 
 	{@html data.PostContent}

@@ -10,8 +10,7 @@ const config = {
 	extensions: ['.svelte', '.md'],
 
 	preprocess: [
-		preprocess({
-		}),
+		preprocess(),
 		mdsvex({
 			// The default mdsvex extension is .svx; this overrides that.
 			extensions: ['.md'],
@@ -38,7 +37,10 @@ const config = {
         '/post/page/*',
       ]
     }
-	}
+	},
+	onDev: ({ hostname, port }) => {
+		console.log(`Dev server is running on http://${hostname}:${port}`);
+	},
 };
 
 export default config;

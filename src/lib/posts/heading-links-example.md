@@ -10,9 +10,9 @@ coverImageAlt: Mountains
 coverWidth: 800
 coverHeight: 450
 excerpt: Check out how heading links work with this starter in this post.
-author: Andrei. Bostan
+author: Daniel. Railean
 authorCurrentRole: Engineer
-authorImageUrl: https://ddlele.com/pic/pas.png
+authorImageUrl: images/pasv2.png
 ---
 
 Here are some headings:
