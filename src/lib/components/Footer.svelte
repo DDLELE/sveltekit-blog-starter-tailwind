@@ -5,13 +5,13 @@
 
 <footer class="p-4 bg-white sm:p-6 dark:bg-gray-900">
     <div class="md:flex md:justify-between">
-        <div class="mb-6 md:mb-0">
+        <div class="w-1/2 mb-6 md:mb-0 ">
             <a href="https://example.com/" class="flex items-center">
                 <img loading="lazy" decoding="async" src="https://ddlele.com/pic/dd.png" class="h-8 mr-3 w-8" alt="" />
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-gray-100">{siteTitle}</span>
             </a>
         </div>
-        <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+        <div class="grid grid-cols-2 gap-8 sm:gap-6">
             <div>
                 <h2 class="mb-6 text-sm font-semibold text-gray-800 uppercase dark:text-gray-100">Links</h2>
                 <ul class="text-gray-600 dark:text-gray-400">

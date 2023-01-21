@@ -1,6 +1,7 @@
 <!-- This file renders each individual blog post for reading. Be sure to update the svelte:head below -->
 <script>
 	import Img from "$lib/components/Img.svelte";
+	import { siteURL } from "$lib/config";
 
 
 	export let data;
@@ -19,10 +20,10 @@
 	<meta name="twitter:title" content={title} />
 	<meta property="og:description" content={excerpt} />
 	<meta name="twitter:description" content={excerpt} />
-	<!-- <meta property="og:image" content="https://yourdomain.com/image_path" /> -->
+	<meta property="og:image" content="{siteURL}{coverImage}" />
 	<meta property="og:image:width" content={coverWidth} />
 	<meta property="og:image:height" content={coverHeight} />
-	<!-- <meta name="twitter:image" content="https://yourdomain.com/image_path" /> -->
+	<meta name="twitter:image" content="{siteURL}{coverImage}" />
 </svelte:head>
 
 <article

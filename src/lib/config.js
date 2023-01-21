@@ -8,7 +8,7 @@
 
 export const siteTitle = 'My Awesome Blog'
 export const siteDescription = 'Built with the SvelteKit Static Blog Starter'
-export const siteURL = 'example.com'
+export const siteURL = 'https://sunny-meringue-d8b084.netlify.app'
 export const siteLink = 'https://github.com/ddlele/sveltekit-blog-starter-tailwind'
 export const siteAuthor = '- find and change this text in src/lib/config.js'
 
