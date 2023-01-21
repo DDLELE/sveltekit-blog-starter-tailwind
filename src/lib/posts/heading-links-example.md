@@ -12,7 +12,7 @@ coverHeight: 450
 excerpt: Check out how heading links work with this starter in this post.
 author: Daniel. Railean
 authorCurrentRole: Engineer
-authorImageUrl: images/pasv2.png
+authorImageUrl: /images/passv2.png
 ---
 
 Here are some headings:

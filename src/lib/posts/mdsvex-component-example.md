@@ -13,7 +13,7 @@ coverHeight: 450
 excerpt: This post demonstrates how to include a Svelte component in a Markdown post.
 author: Daniel Railean
 authorCurrentRole: Engineer
-authorImageUrl: images/pasv2.png
+authorImageUrl: /images/passv2.png
 ---
 
 <script>

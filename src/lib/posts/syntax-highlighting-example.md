@@ -13,7 +13,7 @@ coverHeight: 450
 excerpt: This post shows you how syntax highlighting works here.
 author: Daniel Railean
 authorCurrentRole: Engineer
-authorImageUrl: images/pasv2.png
+authorImageUrl: /images/passv2.png
 ---
 
 mdsvex has automatic, built-in syntax highlighting with [Prism.js](https://prismjs.com/); just include the language name after the triple backticks, like so:
