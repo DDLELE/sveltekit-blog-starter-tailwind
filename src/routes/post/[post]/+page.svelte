@@ -48,7 +48,7 @@
 	  
 	<Img
 		loading="lazy" decoding="async"
-		classes="rounded p-0 mx-0 w-full"
+		classes="rounded my-6 p-0 mx-0 w-full"
 		src={coverImage}
 		alt="{coverImageAlt}"
 		style="aspect-ratio: {coverWidth} / {coverHeight};"
