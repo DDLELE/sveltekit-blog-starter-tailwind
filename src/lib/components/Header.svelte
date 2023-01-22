@@ -88,7 +88,7 @@
 			class="w-full flex-grow lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-gray-100 md:bg-transparent z-20 {currentClasses}" class:hidden={isMenuClosed}
 			id="nav-content"
 		>
-			<ul class="list-reset lg:flex justify-end flex-1 items-center mr-4">
+			<ul class="list-reset lg:flex justify-end flex-1 items-center mr-4 list-none ml-5">
 				<li class="mr-3">
 					<a
 						class="inline-block py-2 px-4 {formatCurrentPage("/post", $page.url.pathname)}"
