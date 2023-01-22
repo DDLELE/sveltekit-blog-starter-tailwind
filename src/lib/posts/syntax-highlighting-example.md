@@ -8,6 +8,7 @@ categories:
   - "css"
   - "markdown"
 coverImage: "/images/linus-nylund-Q5QspluNZmM-unsplash.jpg"
+coverImageAlt: drops
 coverWidth: 800
 coverHeight: 450
 excerpt: This post shows you how syntax highlighting works here.

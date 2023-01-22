@@ -23,7 +23,7 @@
 
 	const toggleMenu = () => {
 		isMenuClosed = !isMenuClosed
-		console.log(isMenuClosed)
+		// console.log(isMenuClosed)
 	}
 
 	onMount(()=> {

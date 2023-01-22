@@ -29,7 +29,7 @@
 	})
 
 	afterUpdate(()=> {
-		console.log("after update")
+		// console.log("after update")
 		const svgClasses = "w-full h-full p-1"
 		const normalClasses = "text-gray-500 dark:text-gray-300 "
 		const normalClassesBorder = "border-gray-300 dark:border-gray-700 "
