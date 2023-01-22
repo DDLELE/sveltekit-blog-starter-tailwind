@@ -33,6 +33,10 @@
     display: none;
 }
 
+html {
+  scroll-padding-top: 5rem;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 5px;
