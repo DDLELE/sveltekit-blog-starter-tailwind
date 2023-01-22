@@ -13,7 +13,10 @@ excerpt: Check out how heading links work with this starter in this post.
 author: Daniel. Railean
 authorCurrentRole: Engineer
 authorImageUrl: /images/passv2.png
+layout: main
 ---
+
+# H1 test
 
 Here are some headings:
 

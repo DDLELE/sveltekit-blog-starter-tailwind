@@ -13,7 +13,7 @@ async function loopFolder (inputFolder, outputFolder) {
 		const extension = ending[ending.length-1]
 		if(!supported.includes(extension))
 		{
-			console.log(`${file} skipped!`)
+			// console.log(`${file} skipped!`)
 			continue
 		}
 		const input = `${inputFolder}/${file}`

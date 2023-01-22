@@ -33,6 +33,32 @@
     display: none;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  padding: 0;
+  margin: 0
+  @apply rounded-b-xl;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply rounded-b-xl bg-slate-300 dark:bg-slate-800
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply rounded-b-xl bg-slate-400 dark:bg-slate-700
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-500 dark:bg-slate-600
+}
+
+
 /* For IE, Edge and Firefox */
 .scrollbar-hide {
     -ms-overflow-style: none;  /* IE and Edge */
@@ -83,7 +109,8 @@ code[class*="language-"] {
 	hyphens: none;
     @apply rounded-lg
     bg-[#f8f8f8] text-[#393A34] 
-    dark:bg-[#1e1e1e] dark:text-[#d4d4d4];
+    dark:bg-[#1e1e1e] dark:text-[#d4d4d4]
+    /* border-b-0; */
 }
 
 pre[class*="language-"]::selection,

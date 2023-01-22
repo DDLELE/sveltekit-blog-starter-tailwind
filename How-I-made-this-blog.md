@@ -27,6 +27,13 @@ Only load if not present
 Allow anyone to crawl your website.
 Good for SEO?
 
-### OGP support
+## OGP support
 
-To allow fancy embedding on fb and other social media
+To allow fancy embedding on fb and other social media. -> was done
+
+## Copy code button
+
+not possible with mdsvex
+not calling scripts
+solution: adding event listeners manually
+

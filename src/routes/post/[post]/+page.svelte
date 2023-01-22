@@ -3,13 +3,12 @@
 	import Img from "$lib/components/Img.svelte";
 	import { siteURL } from "$lib/config";
 
-
 	export let data;
-
+	
 	const { title, excerpt, date, updated, coverImage, coverWidth, coverHeight, categories, coverImageAlt } =
-		data.meta;
-</script>
-
+	data.meta;
+	
+	</script>
 
 <svelte:head>
 	<!-- Be sure to add your image files and un-comment the lines below -->
@@ -26,9 +25,7 @@
 	<meta name="twitter:image" content="{siteURL}{coverImage}" />
 </svelte:head>
 
-<article
-	class="w-full pt-4 text-xl text-gray-800 leading-normal overflow-auto"
->
+<article class="w-full pt-4 text-xl text-gray-800 leading-normal overflow-auto">
 	<!--Title-->
 	<div class="font-sans">
 		<p class="text-base md:text-sm text-green-500 font-bold">

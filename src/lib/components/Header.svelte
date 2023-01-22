@@ -62,7 +62,7 @@
 	
 </script>
 
-<header id="header" class="fixed w-full z-10 top-0 dark:text-gray-100 shadow-lg {currentClasses}">
+<header id="header" class="fixed w-full z-20 top-0 dark:text-gray-100 shadow-lg {currentClasses}">
 	<div
 		id="progress"
 		class="h-[0.27rem] z-20 top-0"
