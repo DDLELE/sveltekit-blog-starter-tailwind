@@ -25,6 +25,10 @@
     p, li {
         @apply text-base dark:text-gray-100;
     }
+
+    code:not([class*="language"]) {
+      @apply p-[0.03rem] px-2 bg-stone-200 dark:bg-stone-800 border border-stone-300 rounded-lg shadow-xl dark:border-stone-900
+    }
   }
 @tailwind components;
 @tailwind utilities;

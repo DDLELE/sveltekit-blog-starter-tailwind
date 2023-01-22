@@ -16,8 +16,8 @@
 		else return 'text-gray-600 hover:text-gray-800 hover:text-underline dark:text-gray-400 hover:dark:text-gray-100'
 	}
 
-	let headerClassesTop = "bg-gray-100 dark:bg-slate-800"
-	let headerClassesBottom = "bg-white dark:bg-slate-900"
+	let headerClassesTop = "bg-gray-100 dark:bg-stone-800"
+	let headerClassesBottom = "bg-white dark:bg-stone-900"
 	let currentClasses = headerClassesTop
 	let isMenuClosed = true
 
@@ -55,7 +55,7 @@
 			}
 		}
 		reactToScroll()
-		setTimeout(()=>reactToScroll, 300)
+		setTimeout(()=>reactToScroll, 100)
 
 		document.addEventListener('scroll', reactToScroll);
 	})
@@ -63,14 +63,9 @@
 </script>
 
 <header id="header" class="fixed w-full z-20 top-0 dark:text-gray-100 shadow-lg {currentClasses}">
-	<div
-		id="progress"
-		class="h-[0.27rem] z-20 top-0"
-		style="background:linear-gradient(to right, #4dc0b5 var(--scroll), transparent 0);"
-	/>
 
-	<div class="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3">
-		<div class="pl-4">
+	<div class="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 py-2 pt-[0.8rem]">
+		<div class="pl-9">
 			<a href="/" class="hover:no-underline">
 				<h1 class="my-0 text-gray-800 dark:text-gray-100 text-xl no-underline hover:no-underline font-extrabold" href="/">
 					{siteTitle}
@@ -93,7 +88,7 @@
 			class="w-full flex-grow lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-gray-100 md:bg-transparent z-20 {currentClasses}" class:hidden={isMenuClosed}
 			id="nav-content"
 		>
-			<ul class="list-reset lg:flex justify-end flex-1 items-center">
+			<ul class="list-reset lg:flex justify-end flex-1 items-center mr-4">
 				<li class="mr-3">
 					<a
 						class="inline-block py-2 px-4 {formatCurrentPage("/post", $page.url.pathname)}"
@@ -115,6 +110,11 @@
 			</ul>
 		</div>
 	</div>
+	<div
+	id="progress"
+	class="h-[0.30rem] z-20 top-0 border-b dark:border-stone-800 border-gray-100 bg-emerald-600"
+	style="background:linear-gradient(to right, rgb(5 150 105 /1) var(--scroll), transparent 0);"
+/>
 </header>
 
 <style lang="postcss">

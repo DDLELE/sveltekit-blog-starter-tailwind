@@ -18,7 +18,7 @@ layout: main
 
 # H1 test
 
-Here are some headings:
+Here are some `headings`:
 
 ## Here's an h2
 
