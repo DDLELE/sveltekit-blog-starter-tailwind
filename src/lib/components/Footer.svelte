@@ -14,7 +14,7 @@
         <div class="grid grid-cols-2 gap-8 sm:gap-6">
             <div>
                 <h2 class="mb-6 text-sm font-semibold text-gray-800 uppercase dark:text-gray-100">Links</h2>
-                <ul class="text-gray-600 dark:text-gray-400">
+                <ul class="text-gray-600 dark:text-gray-400 list-none">
                     <li>
                         <a href="/" class="hover:underline">Home</a>
                     </li>
@@ -28,7 +28,7 @@
             </div>
             <div>
                 <h2 class="mb-6 text-sm font-semibold text-gray-800 uppercase dark:text-gray-100">Legal</h2>
-                <ul class="text-gray-600 dark:text-gray-400">
+                <ul class="text-gray-600 dark:text-gray-400 list-none">
                     <li>
                         <a href="/" class="hover:underline">Privacy Policy</a>
                     </li>
