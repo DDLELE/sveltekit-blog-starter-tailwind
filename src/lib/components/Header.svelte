@@ -92,19 +92,19 @@
 				<li class="mr-3">
 					<a
 						class="inline-block py-2 px-4 {formatCurrentPage("/post", $page.url.pathname)}"
-						href="/post">Posts</a
+						href="/post" on:click={()=>{toggleMenu()}}>Posts</a
 					>
 				</li>
 				<li class="mr-3">
 					<a
 						class="inline-block  py-2 px-4 {formatCurrentPage("/about", $page.url.pathname)}"
-						href="/about">About</a
+						href="/about" on:click={()=>{toggleMenu()}}>About</a
 					>
 				</li>
 				<li class="mr-3">
 					<a
 						class="inline-block  py-2 px-4 {formatCurrentPage("/contact", $page.url.pathname)}"
-						href="/contact">Contact</a
+						href="/contact" on:click={()=>{toggleMenu()}}>Contact</a
 					>
 				</li>
 			</ul>
