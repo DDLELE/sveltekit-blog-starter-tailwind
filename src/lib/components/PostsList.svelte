@@ -49,3 +49,9 @@
 </article>
 </a>
 {/each}
+
+<style>
+	article {
+		 font-family: 'JetBrains Mono', monospace;   
+	}
+</style>

@@ -52,6 +52,9 @@
 		const codes = document.getElementsByTagName("pre")
 		for(const codeBlock of codes)
 		{
+			// skip if a copy button exists
+			if(codeBlock.getElementsByTagName("div").length > 0) continue
+			
 			codeBlock.className = codeBlock.className + " relative flex flex-row justify-between "
 
 			let copyContainer = document.createElement("div")

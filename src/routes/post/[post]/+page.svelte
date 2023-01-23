@@ -63,7 +63,7 @@
 		Tags:
 		<div class="flex flex-row flex-wrap mt-1">
 		{#each categories as category}
-			<a class="text-xl md:text-md dark:bg-teal-900 bg-teal-100 border-emerald-600 dark:border-emerald-800 border-2 px-2 mr-1 mt-1" href="/post/category/{category}/">
+			<a class="text-xl font-normal dark:text-green-500 text-green-700 md:text-md dark:bg-teal-900 bg-teal-200 border-emerald-600 dark:border-emerald-800 border-2 px-2 mr-1 mt-1" href="/post/category/{category}/">
 				{category}
 			</a>
 			{/each}

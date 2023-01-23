@@ -19,19 +19,28 @@
       @apply text-base font-bold dark:text-gray-100 my-1;
     }
     a {
-      @apply text-blue-600 underline;
+      @apply dark:text-slate-100 text-slate-800 no-underline font-bold;
     }
+
+    a:hover {
+        @apply underline decoration-green-600;
+    }
+
 
     p, li {
         @apply text-base dark:text-gray-100;
     }
 
     code:not([class*="language"]) {
-      @apply p-[0.03rem] px-2 bg-stone-200 dark:bg-stone-800 border border-stone-300 rounded-lg shadow-xl dark:border-stone-900
+      @apply p-[0.03rem] px-2 bg-slate-300 dark:bg-stone-800 border border-stone-300 rounded shadow-xl dark:border-stone-900;
     }
 
     ul, ol {
       @apply list-inside
+    }
+
+    li {
+      @apply ml-3 my-[0.35rem]
     }
 
     ul {
@@ -40,6 +49,10 @@
 
     ol {
       @apply list-decimal
+    }
+
+    h1,h2,h3,h4,h5,h6,p,ul,ol,li,a {
+      font-family: 'Open Sans', sans-serif;
     }
   }
 @tailwind components;
@@ -86,17 +99,10 @@ html {
 }
 
 * {
-    font-family: 'JetBrains Mono', monospace;   
+    /* font-family: 'JetBrains Mono', monospace;    */
     word-break: break-word;
+    /* font-family: 'PT Sans', sans-serif; */
 }
-
-a {
-    @apply dark:text-green-500 text-emerald-600 no-underline;
-}
-a:hover {
-    @apply underline;
-}
-
 
 /* http://prismjs.com/download.html?themes=prism-coy&languages=markup+css+clike+javascript+typescript&plugins=line-highlight+line-numbers+toolbar+normalize-whitespace+show-language+copy-to-clipboard */
 /**
@@ -106,14 +112,13 @@ a:hover {
  */
 
  pre[class*="language-"] {
-    @apply shadow-lg border border-stone-200 dark:border-stone-800
+    @apply shadow-lg border border-stone-200 dark:border-stone-800;
  }
 
 pre[class*="language-"],
 code[class*="language-"] {
 	font-size: 13px;
 	text-shadow: none;
-	font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;
 	direction: ltr;
 	text-align: left;
 	white-space: pre;
@@ -126,10 +131,12 @@ code[class*="language-"] {
 	-webkit-hyphens: none;
 	-moz-hyphens: none;
 	-ms-hyphens: none;
+  font-family: 'JetBrains Mono', monospace; 
 	hyphens: none;
     @apply rounded-lg
     bg-[#f8f8f8] text-[#393A34] 
     dark:bg-[#1e1e1e] dark:text-[#d4d4d4]
+    align-middle;
     /* border-b-0; */
 }
 
@@ -151,8 +158,8 @@ code[class*="language-"] *::selection {
 
 pre[class*="language-"] {
 	padding: 1em;
-	margin: .5em 0;
 	overflow: auto;
+  @apply my-5
 }
 
 :not(pre) > code[class*="language-"] {
