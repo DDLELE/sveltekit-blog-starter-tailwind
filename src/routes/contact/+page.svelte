@@ -16,12 +16,12 @@ If you're using this starter for your own site, feel free to delete this page, o
 <Callout>This form does nothing! It's just here to show default styling.</Callout>
 
 <form on:submit|preventDefault>
-	<div class="form-section">
+	<div>
 		<label for="name">Name</label>
 		<input type="text" id="name" placeholder="First name" />
 	</div>
 	
-	<div class="form-section">
+	<div>
 		<label for="email">Email</label>
 		<input type="email" id="email" placeholder="Email address" />
 	</div>
@@ -45,7 +45,7 @@ If you're using this starter for your own site, feel free to delete this page, o
 		</div>
 	</fieldset>
 
-	<div class="form-section">
+	<div>
 		<input type="checkbox" id="c1" >
 		<label for="c1">Sign me up for something!</label>
 	</div>
