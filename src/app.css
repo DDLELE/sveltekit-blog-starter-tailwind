@@ -1,3 +1,8 @@
+@font-face{
+  font-family: 'futura';
+  src: url('/fonts/futura/futur.ttf') format('ttf');
+}
+
 @tailwind base;
 @layer base {
     h1 {
@@ -29,30 +34,41 @@
 
     p, li {
         @apply text-base dark:text-gray-100;
+        /* list-style-type: '👉'; */
     }
 
     code:not([class*="language"]) {
-      @apply p-[0.03rem] px-2 bg-slate-300 dark:bg-stone-800 border border-stone-300 rounded shadow-xl dark:border-stone-900;
+      @apply px-1 py-[1px] bg-slate-300 dark:bg-stone-900 rounded shadow mx-auto;
     }
 
     ul, ol {
       @apply list-inside
+       /* ml-3 p-0 */
     }
 
-    li {
-      @apply ml-3 my-[0.35rem]
+    li:before 
+    {
+      content: "-";
+      /* list-style-type: "-" */
+      @apply mr-2
     }
-
-    ul {
-      @apply list-disc
-    }
+    /* ul {
+      list-style-type: circle;
+    } */
 
     ol {
       @apply list-decimal
     }
 
-    h1,h2,h3,h4,h5,h6,p,ul,ol,li,a {
-      font-family: 'Open Sans', sans-serif;
+    h1,h2,h3,h4,h5,h6 {
+      font-family: 'futura', sans-serif;
+      /* font-family: 'Maven Pro', sans-serif; */
+      /* font-family: 'Arvo', sans-serif; */
+    }
+    p,ul,ol,li,a {
+      font-family: 'Overpass', sans-serif;
+      /* font-family: 'Maven Pro', sans-serif; */
+      /* font-family: 'Arvo', sans-serif; */
     }
   }
 @tailwind components;
@@ -64,6 +80,7 @@
 
 html {
   scroll-padding-top: 5rem;
+  font-size: 19px
 }
 
 /* width */
@@ -118,7 +135,7 @@ html {
 
 pre[class*="language-"],
 code[class*="language-"] {
-	font-size: 13px;
+	font-size: 16px;
 	text-shadow: none;
 	direction: ltr;
 	text-align: left;
@@ -132,11 +149,11 @@ code[class*="language-"] {
 	-webkit-hyphens: none;
 	-moz-hyphens: none;
 	-ms-hyphens: none;
-  font-family: 'JetBrains Mono', monospace; 
+  font-family: 'courier prime', monospace; 
 	hyphens: none;
     @apply rounded-lg
-    bg-[#f8f8f8] text-[#393A34] 
-    dark:bg-[#1e1e1e] dark:text-[#d4d4d4]
+    bg-gray-50 text-gray-600
+    dark:bg-stone-900 dark:text-gray-50
     align-middle;
     /* border-b-0; */
 }
@@ -148,6 +165,11 @@ code[class*="language-"] *::selection {
 	text-shadow: none;
 	background: #264F78;
     @apply text-[#f8f8f8]
+}
+
+code {
+  font-family: 'courier prime', monospace; 
+
 }
 
 @media print {

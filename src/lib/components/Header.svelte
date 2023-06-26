@@ -25,49 +25,15 @@
 		isMenuClosed = !isMenuClosed
 		// console.log(isMenuClosed)
 	}
-
-	onMount(()=> {
-				/* Progress bar */
-		//Source: https://alligator.io/js/progress-bar-javascript-css-variables/
-		var h = document.documentElement,
-			b = document.body,
-			st = 'scrollTop',
-			sh = 'scrollHeight',
-			progress = document.querySelector('#progress'),
-			scroll;
-		var scrollpos = window.scrollY;
-	
-		const reactToScroll = function () {
-			/*Refresh scroll % width*/
-			scroll = ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) * 100;
-			progress.style.setProperty('--scroll', scroll + '%');
-
-			/*Apply classes for slide in bar*/
-			scrollpos = window.scrollY;
-
-			// when lower
-			if (scrollpos > 10) {
-				currentClasses = headerClassesBottom
-			} 
-			// when at top
-			else {
-				currentClasses = headerClassesTop
-			}
-		}
-		reactToScroll()
-		setTimeout(()=>reactToScroll, 100)
-
-		document.addEventListener('scroll', reactToScroll);
-	})
 	
 </script>
 
-<header id="header" class="fixed w-full z-20 top-0 dark:text-gray-100 shadow-lg {currentClasses}">
+<header id="header" class="w-full z-20 top-0 dark:text-gray-100 {currentClasses}">
 
 	<div class="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 py-2 pt-[0.8rem]">
 		<div class="pl-9">
 			<a href="/" class="hover:no-underline">
-				<h1 class="my-0 text-gray-800 dark:text-gray-100 text-xl no-underline hover:no-underline font-extrabold" href="/">
+				<h1 class="my-0 text-gray-800 dark:text-gray-100 text-4xl no-underline hover:no-underline font-extrabold" href="/">
 					{siteTitle}
 				</h1></a>
 		</div>
@@ -75,9 +41,9 @@
 		<div class="block lg:hidden pr-4">
 			<button
 				id="nav-toggle"
-				class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-800 hover:border-green-500 appearance-none hover:dark:text-white focus:outline-none hover:shadow-lg"
+				class="flex items-center px-3 py-3 rounded text-gray-500 transition-all hover:bg-zinc-800 focus:outline-none shadow outline-none"
 			 on:click={()=>{toggleMenu()}}>
-				<svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+				<svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
 					<title>Menu</title>
 					<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
 				</svg>
@@ -110,11 +76,6 @@
 			</ul>
 		</div>
 	</div>
-	<div
-	id="progress"
-	class="h-[0.30rem] z-20 top-0 border-b dark:border-stone-800 border-gray-100 bg-emerald-600"
-	style="background:linear-gradient(to right, rgb(5 150 105 /1) var(--scroll), transparent 0);"
-/>
 </header>
 
 <style lang="postcss">
